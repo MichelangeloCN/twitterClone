@@ -1,23 +1,11 @@
-# name: Run Eslint
-# on: pull_request
-# jobs:
-#   lint:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - name: Install modules
-#         run: npm install
-#       - name: Run ESLint
-#         run: cd app && npx eslint . --ext .js,.jsx,.ts,.tsx
-
-name: Linting
+name: Run Eslint
 on: pull_request
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install modules
         run: cd app && npm install
       - name: Run ESLint
-        run: ./app/node_modules/eslint/bin/eslint.js ./app --ext .js,.jsx,.ts,.tsx
+        run: npx eslint . --ext .js,.jsx,.ts,.tsx
