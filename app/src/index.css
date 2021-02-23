@@ -1,16 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 /***** Global CSS *****/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');u
 
@@ -41,10 +28,19 @@ h1, h2, h3, h4, h5, h6 {
   --secondaryBckgr: #15181c; /*right sidebar bckgr, search field, dark button bckg */
   --blueAccent: #1da1f2;
   --inactiveIcon: #0e5179;
-  --iconconHover: #031019;
+  --blueIconHover: #031019;
   --lightGrey: #d9d9d9; /* main font, light icons */
   --darkGrey: #6E767D; /* secondary font, dark grey icons, interaction bar */
   --buttonFont: #fff;
+  
+  /* interaction bar */
+  --comment: #1da1f2; /*same for share button */
+  --commentHover: #0e5179; /*same for share button */
+  --retweet: #17bf63;
+  --retweetHover: #091B11;
+  --like: #e0245e;
+  --likeHover: #420e1e;
+
 }
 
 
