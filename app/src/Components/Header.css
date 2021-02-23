@@ -1,12 +1,25 @@
+.Header{
+    background: black;
+    height: 50px;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 h1 {
     font-size: 19px;
     font-weight: 800;
     line-height: 25px;
-    background: black;
-    height: 50px;
     font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-
+    padding-left: 8%;
   }
 
+  #profilePic {
+      border-radius: 50%;
+      width: 10%;
+      height: auto;
+      padding: 11px;
+      align-items: left;
+  }
+
+  
