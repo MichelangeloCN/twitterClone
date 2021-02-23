@@ -6,6 +6,12 @@
     align-items: center; 
 }
 
+.interactionIcons button {
+    border: none;
+    background: none;
+}
+
+
 .interactionIcons i {
     color: var(--darkGrey);
     font-size: 1.35rem;
