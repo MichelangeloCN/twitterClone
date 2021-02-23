@@ -28,9 +28,8 @@ const Feed = () => {
       {isLoading ? (
         <i id="loadingSpinner" className="ri-loader-2-line" />
       ) : (
-        tweetComponents
+        tweetComponents && <p>There are not tweets available</p>
       )}
-      {}
     </div>
   );
 };
