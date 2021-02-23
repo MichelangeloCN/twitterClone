@@ -1,4 +1,4 @@
-To install cd app and run npm install remixicon --save
+To install cd app and run npm install
 
 Outlined icons as a standard - lightGrey
 When hover change colour to blueAccent + round bckg colour blueIconHover
