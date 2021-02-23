@@ -1,15 +1,12 @@
 import React from "react";
 import "./App.css";
-<<<<<<< HEAD
 import Header from "./Components/Header";
-=======
-import ExampleComponent from "./Components/ExampleComponent";
->>>>>>> origin/main
+// import ExampleComponent from "./Components/ExampleComponent";
 
 function App() {
   return (
     <div className="App">
-      <ExampleComponent />
+      <Header />
       <i className="ri-notification-3-line" />
     </div>
   );
