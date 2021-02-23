@@ -20,6 +20,7 @@
   "rules": {
     "react/jsx-filename-extension": "off",
     "object-curly-newline": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "arrow-body-style": "off"
   }
 }
