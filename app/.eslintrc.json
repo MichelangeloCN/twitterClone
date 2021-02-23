@@ -4,7 +4,11 @@
     "es6": true,
     "jest": true
   },
-  "extends": ["airbnb", "airbnb/hooks", "prettier"],
+  "extends": [
+    // "airbnb",
+    "airbnb/hooks",
+    "prettier"
+  ],
   "plugins": ["react", "prettier"],
   "globals": {
     "Atomics": "readonly",
@@ -20,6 +24,7 @@
   "rules": {
     "react/jsx-filename-extension": "off",
     "object-curly-newline": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "arrow-body-style": "off"
   }
 }
