@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/***** Global CSS *****/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');u
+
+html {
+  font-size: 16;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: var(--lightGrey);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: none;
+}
+
+
+/***** Colours *****/
+/* All colours can be used using var(--colourYouWant) */
+
+:root {
+  --mainBckgr: #000;
+  --secondaryBckgr: #15181c; /*right sidebar bckgr, search field, dark button bckg */
+  --blueAccent: #1da1f2;
+  --inactiveIcon: #0e5179;
+  --iconconHover: #031019;
+  --lightGrey: #d9d9d9; /* main font, light icons */
+  --darkGrey: #6E767D; /* secondary font, dark grey icons, interaction bar */
+  --buttonFont: #fff;
+}
+
+
+/***** Fonts *****/ 
+/* used for: main header, right sidebar header, messages header */
+
+h1 {
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+/* navbar on desktop,  */
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+/* profile name,  */
+h3 {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* main text/feed text */
+.mainText {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* secondary text (dark grey) */
+.secondaryText {
+  color: var(--darkGrey);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* mentions, hashtags, show more on the sidebar */
+.blueText {
+  color: var(--blueAccent);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.darkButton {
+  background: var(--secondaryBckgr);
+  color: var(--blueAccent); 
+}
+
+.blueButton { 
+  background: var(--blueAccent);
+  color: var(--buttonFont);
+}
