@@ -8,4 +8,4 @@ jobs:
       - name: Install modules
         run: npm install
       - name: Run ESLint
-        run: npx eslint ./app/ --ext .js,.jsx,.ts,.tsx
+        run: cd app && npx eslint ./app/ --ext .js,.jsx,.ts,.tsx
