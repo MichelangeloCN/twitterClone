@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExampleComponent = (props) => {
+const ExampleComponent = () => {
   return (
     <>
       <div className="container">
