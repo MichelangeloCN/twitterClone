@@ -20,4 +20,4 @@ jobs:
       - name: Install modules
         run: cd app && npm install
       - name: Run ESLint
-        run: ./node_modules/eslint/bin/eslint.js . --ext .js,.jsx,.ts,.tsx
+        run: ./app/node_modules/eslint/bin/eslint.js ./app --ext .js,.jsx,.ts,.tsx
