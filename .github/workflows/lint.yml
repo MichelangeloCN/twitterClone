@@ -1,4 +1,4 @@
-name: Run prettier and eslint
+name: Run Eslint
 on: pull_request
 jobs:
   build:
@@ -8,4 +8,4 @@ jobs:
       - name: Install modules
         run: npm install
       - name: Run ESLint
-        run: eslint ./app/ --ext .js,.jsx,.ts,.tsx
+        run: npx eslint ./app/ --ext .js,.jsx,.ts,.tsx
