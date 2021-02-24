@@ -1,6 +1,7 @@
 .Header {
   background: black;
   height: 50px;
+  width: 100%;
   margin: 0%;
   display: flex;
   justify-self: flex-start;

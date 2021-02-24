@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import RightSidebar from './Components/RightSidebar';
-
+import TweetCompose from "./Components/TweetCompose"
 import Header from "./Components/Header";
 import Feed from "./Components/Feed";
 
@@ -16,6 +16,7 @@ function App() {
         <div className="NavBar" />
       <div className="leftSideBar">
         <div className="TweetCompose" />
+        <TweetCompose />
         <Feed />
       <RightSidebar />
     </div>
