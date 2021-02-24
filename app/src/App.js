@@ -1,17 +1,26 @@
 import React from "react";
 import "./App.css";
-import ExampleComponent from "./Components/ExampleComponent";
-import InteractionBar from './Components/InteractionBar';
+
+import Header from "./Components/Header";
 
 function App() {
   return (
     <div className="App">
-      <ExampleComponent />
-      <i className="ri-notification-3-line" />
-      <InteractionBar />
+      <div className="leftSideBar">
+        <div className="NavBar" />
+      </div>
+      <div className="centralSection">
+        <Header />
+        <div className="TweetCompose" />
+        <div className="Feed" />
+      </div>
+      <div className="rightSideBar">
+        <div className="searchBar" />
+        <div className="WhatsHappening" />
+        <div className="WhoToFollow" />
+      </div>
     </div>
   );
 }
 
 export default App;
-
