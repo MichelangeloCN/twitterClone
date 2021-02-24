@@ -4,6 +4,8 @@ import "./App.css";
 import Header from "./Components/Header";
 import Feed from "./Components/Feed";
 
+// As you make components you can replace the div's with the correct className
+
 function App() {
   return (
     <div className="App">
