@@ -21,14 +21,26 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 20px;
+  margin-right: 0.4em;
 }
 .tweetMoreButton {
   background: var(--mainBckgr);
   float: right;
   border: none;
+  border-radius: 50%;
+  transition: 1s background ease-in-out;
+  height: 2em;
 }
 .tweetMoreButton i {
   color: var(--darkGrey);
+  transition: 1s color ease-in-out;
+  line-height: 2;
+}
+.tweetMoreButton:hover i {
+  color: var(--blueAccent);
+}
+.tweetMoreButton:hover {
+  background-color: var(--blueIconHover);
 }
 .tweetBody {
   padding-top: 0.2em;

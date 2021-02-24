@@ -9,7 +9,6 @@ const InteractionBar = () => {
 
   return (
     <div className="interactionIcons">
-      
       <div className="comment">
         <button type="button" onClick={() => setCommentCount(commentCount + 1)}>
           <i className="ri-chat-3-line"> </i>
@@ -35,7 +34,6 @@ const InteractionBar = () => {
         <button type="button" onClick={() => setShareCount(shareCount + 1)}>
           <i className="ri-download-2-line"> </i>
         </button>
-        <p> {shareCount} </p>
       </div>
     </div>
   );

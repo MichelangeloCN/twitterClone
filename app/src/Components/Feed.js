@@ -18,7 +18,7 @@ const Feed = () => {
     setIsLoading(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2000);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -28,7 +28,9 @@ const Feed = () => {
   return (
     <div className="feedContainer">
       {isLoading ? (
-        <i id="loadingSpinner" className="ri-loader-2-line" />
+        <div className="spinnerContainer">
+          <i id="loadingSpinner" className="ri-loader-2-line" />
+        </div>
       ) : (
         tweetComponents
       )}
