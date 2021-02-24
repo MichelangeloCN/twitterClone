@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-
+import TweetCompose from "./Components/TweetCompose"
 import Header from "./Components/Header";
 import Feed from "./Components/Feed";
 
@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className="centralSection">
         <Header />
-        <div className="TweetCompose" />
+        <TweetCompose />
         <Feed />
       </div>
       <div className="rightSideBar">
