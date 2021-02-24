@@ -1,0 +1,30 @@
+.Header {
+  background: black;
+  height: 50px;
+  margin: 0%;
+  display: flex;
+  justify-self: flex-start;
+}
+
+h1 {
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 25px;
+  font-size: 1.3rem;
+  padding-left: 8%;
+}
+
+#profilePic {
+  border-radius: 50%;
+  width: 10%;
+  height: auto;
+  padding: 11px;
+  align-items: left;
+}
+
+.ri-star-s-line {
+  padding-left: 200px;
+  padding-top: 15px;
+  color: var(--comment);
+  font-size: 16pt;
+}

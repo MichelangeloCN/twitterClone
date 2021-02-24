@@ -1,0 +1,58 @@
+.interactionIcons {
+    width: 100%;
+    background: var(--mainBckgr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.interactionIcons i {
+    color: var(--darkGrey);
+    font-size: 1.35rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.15em;
+    padding: 0.35em;
+    cursor: pointer;
+}
+
+.comment, .retweet, .like, .share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.interactionIcons i:hover{
+    background-color: var(--commentHover);
+    border-radius: 100%;
+}
+
+
+/* both comment and share have the same colours */
+.comment i:hover, .share i:hover {
+    color: var(--comment);
+    background: var(--commentHover);
+}
+.comment:hover, .share:hover {
+    color:  var(--comment);
+}
+
+.retweet i:hover {
+    color: var(--retweet);
+    background: var(--retweetHover);
+}
+.retweet:hover{
+    color: var(--retweet);
+}
+
+.like i:hover {
+    color: var(--like);
+    background: var(--likeHover);
+}
+.like:hover {
+    color: var(--like);
+}
+
+
+
