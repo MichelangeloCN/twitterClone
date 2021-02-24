@@ -6,7 +6,7 @@ import tweets from "../tweets";
 import Tweet from "./Tweet";
 
 const Feed = () => {
-  const [feedTweets, setTweets] = useState(tweets);
+  const [feedTweets] = useState(tweets);
   const [isLoading, setIsLoading] = useState(null);
 
   const tweetComponents = feedTweets.map((tweet) => (
@@ -16,7 +16,6 @@ const Feed = () => {
   useEffect(() => {
     setIsLoading(true);
     const timer = setTimeout(() => {
-      console.log("timer");
       setIsLoading(false);
     }, 3000);
     return () => clearTimeout(timer);
