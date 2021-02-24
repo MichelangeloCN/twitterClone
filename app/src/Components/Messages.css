@@ -1,0 +1,19 @@
+.flexContainer {
+  display: flex;
+}
+
+.ri-mail-line {
+  color: var(--blueAccent);
+}
+
+.Message-1 {
+  border-color: var(--darkGrey);
+  border-width: thick;
+}
+
+.title {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding-left: 10%;
+}
