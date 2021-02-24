@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 import Header from "./Components/Header";
+import Feed from "./Components/Feed";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <div className="centralSection">
         <Header />
         <div className="TweetCompose" />
-        <div className="Feed" />
+        <Feed />
       </div>
       <div className="rightSideBar">
         <div className="searchBar" />
