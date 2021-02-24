@@ -5,8 +5,7 @@ import Header from "./Components/Header";
 import InteractionBar from "./Components/InteractionBar";
 import Messages from "./Components/Messages";
 import MobileNavBar from "./Components/MobileNavBar";
-
-
+import TweetCompose from "./Components/TweetCompose"
 import Header from "./Components/Header";
 import Feed from "./Components/Feed";
 
@@ -27,7 +26,7 @@ function App() {
       </div>
       <div className="centralSection">
         <Header />
-        <div className="TweetCompose" />
+        <TweetCompose />
         <Feed />
       </div>
       <div className="rightSideBar">
