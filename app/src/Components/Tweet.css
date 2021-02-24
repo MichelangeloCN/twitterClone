@@ -1,0 +1,35 @@
+.tweetContainer {
+  outline: solid 0.5px var(--darkGrey);
+  display: flex;
+  padding: 0.8em;
+  background: var(--mainBckgr);
+  max-width: 100%;
+}
+.leftSide {
+  padding-right: 0.8em;
+  display: flex;
+  justify-content: right;
+}
+.profileImg img {
+  height: 40px;
+  border-radius: 50%;
+}
+.tweetMain {
+  flex-grow: 2;
+}
+.userName {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.tweetMoreButton {
+  background: var(--mainBckgr);
+  float: right;
+  border: none;
+}
+.tweetMoreButton i {
+  color: var(--darkGrey);
+}
+.tweetBody {
+  padding-top: 0.2em;
+}

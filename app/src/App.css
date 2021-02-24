@@ -1,5 +1,5 @@
 .App {
-  background: var(--mainBckgr);
+  background: var(--secondaryBckgr);
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -8,4 +8,5 @@
 .centralSection {
   display: flex;
   flex-direction: column;
+  max-width: 100vw;
 }
