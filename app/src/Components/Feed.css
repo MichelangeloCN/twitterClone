@@ -1,0 +1,21 @@
+.feedContainer {
+  background: var(--mainBckgr);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#loadingSpinner {
+  color: var(--blueAccent);
+  font-size: 3rem;
+  animation: flash 1s infinite ease-in-out alternate;
+}
+
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
