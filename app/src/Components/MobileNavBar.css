@@ -1,0 +1,30 @@
+.MobileNavBar {
+  background: var(--mainBckgr);
+  height: 50px;
+  margin: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.35rem;
+}
+
+.ri-home-7-fill {
+  color: var(--blueAccent);
+}
+
+.ri-search-line:hover {
+  color: var(--blueAccent);
+}
+
+.ri-notification-3-line:hover {
+  color: var(--blueAccent);
+}
+
+#mailicon {
+  color: var(--lightgrey);
+}
+
+#mailicon:hover {
+  color: var(--blueAccent);
+}

@@ -4,6 +4,7 @@ import ExampleComponent from "./Components/ExampleComponent";
 import Header from "./Components/Header";
 import InteractionBar from "./Components/InteractionBar";
 import Messages from "./Components/Messages";
+import MobileNavBar from "./Components/MobileNavBar";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <i className="ri-notification-3-line" />
       <InteractionBar />
       <Messages />
+      <MobileNavBar />
     </div>
   );
 }
