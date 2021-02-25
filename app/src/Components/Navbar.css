@@ -20,6 +20,8 @@
 }
 
 .navTwitterLogo {
+    display: flex;
+    justify-content: flex-start;
     margin-bottom: 1em;
 }
 
@@ -64,4 +66,54 @@
     background-color: var(--blueIconHover);
     border-radius: 20px;
     cursor: pointer;
+}
+
+@media (max-width: 1275px) {
+    .navTwitterLogo {
+        text-align: right;
+    }
+    #navElements {
+        justify-content: flex-end;
+        margin: 0.5em 0;
+    }
+    
+    #navElements h2 {
+        display: none;
+    }
+
+    .Navbar {
+        width:115px;
+    }
+    
+    .navTwitterLogo,
+    .bottomProfile {
+        justify-content: flex-end;
+    }
+
+    .bottomProfile .profileHandle,
+    .bottomProfileIcon {
+        display:none;
+    }
+
+    .bottomProfile:hover {
+        background: none;
+    }
+
+    .bottomProfileContent .profileImg:hover{
+        background-color: var(--blueIconHover);
+        border-radius: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .Navbar {
+        width:65px;
+    }
+
+    .navTwitterLogo,
+    #navElements,
+    .bottomProfile {
+        justify-content: center;
+    }
+
 }

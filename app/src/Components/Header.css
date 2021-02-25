@@ -5,7 +5,7 @@
   margin: 0%;
   display: flex;
   justify-content: flex-start;
-  position: fixed;
+  position: sticky;
   top: 0;
   border-bottom: 0.5px solid var(--darkGrey);
 }
@@ -16,16 +16,19 @@ h1 {
   line-height: 25px;
   font-size: 1.3rem;
   padding-left: 8%;
+  flex-grow: 2;
 }
 
+.profileContainer {
+  width: 70px;
+  height: 100%;
+}
 #profilePic {
   border-radius: 50%;
-  padding: 11px;
-  align-items: left;
+  width: 60px;
+  height: 60px;
 }
-
 .ri-star-s-line {
-  padding-left: 200px;
   padding-top: 15px;
   color: var(--comment);
   font-size: 16pt;

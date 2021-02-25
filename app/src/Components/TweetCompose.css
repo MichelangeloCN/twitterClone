@@ -20,7 +20,7 @@
 
 .tweetCompose {
   width: 100%;
-  display: grid;
+  display: none; /* grid */
   grid-template-columns: repeat(7, 7fr);
   grid-template-rows: 1fr 4fr 1fr;
 }
@@ -69,5 +69,13 @@ i {
 i:hover {
   background-color: var(--blueIconHover);
   border-radius: 50%;
+}
+
+
+
+@media (min-width: 600px) {
+  .tweetCompose {
+    display: grid;
+  }
 }
 
