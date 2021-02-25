@@ -1,0 +1,48 @@
+.rightSidebar {
+    background: var(--mainBckgr);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+footer {
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.links1, .links2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:5px;
+}
+
+/* .links1 {
+    margin-bottom: -0.5em; not working FIX IT
+} */
+
+.links2 p {
+    color: var(--darkGrey);
+} 
+
+a:link { 
+    color: var(--darkGrey); 
+    text-decoration:none;
+    padding: 0 1px;
+}
+a:visited { 
+    color: var(--darkGrey); 
+}
+a:active { 
+    color: var(--darkGrey); 
+}
+a:hover { 
+    text-decoration: underline;
+    color: var(--darkGrey); 
+}
+  
+

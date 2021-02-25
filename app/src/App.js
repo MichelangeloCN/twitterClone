@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import RightSidebar from './Components/RightSidebar';
 import TweetCompose from "./Components/TweetCompose"
 import Header from "./Components/Header";
 import Feed from "./Components/Feed";
@@ -9,19 +10,15 @@ import Feed from "./Components/Feed";
 function App() {
   return (
     <div className="App">
-      <div className="leftSideBar">
-        <div className="NavBar" />
-      </div>
-      <div className="centralSection">
         <Header />
+      <div className="centralSection">
+      </div>
+        <div className="NavBar" />
+      <div className="leftSideBar">
+        <div className="TweetCompose" />
         <TweetCompose />
         <Feed />
-      </div>
-      <div className="rightSideBar">
-        <div className="searchBar" />
-        <div className="WhatsHappening" />
-        <div className="WhoToFollow" />
-      </div>
+      <RightSidebar />
     </div>
   );
 }

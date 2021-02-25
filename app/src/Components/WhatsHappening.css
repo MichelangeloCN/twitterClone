@@ -1,0 +1,61 @@
+body {
+    background-color: #000;
+}
+
+.whatsHappening {
+    width: 350px;
+    background-color: var(--secondaryBckgr);
+    border-radius: 20px;
+    margin: 0 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-weight: 800;
+}
+
+.whatsHappening img {
+    border-radius: 20px;
+    width: 80px;
+}
+
+.newsImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsHappening h1 {
+   padding: 0.25em 0.6em;
+}
+
+.whatsHappening h1, .newsImg, .newsNoImg {
+    border-bottom: 1px solid var(--darkGrey);
+}
+
+.newsImg, .newsNoImg {
+    padding: 1.05em 0 0 0.75em ;
+}
+
+.whatsHappening p {
+    padding: 0;
+    margin: -1em 0;
+}
+
+.whatsHappening button {
+    background: none;
+    border: none;
+    padding: 0.8em;
+}
+
+.whatsHappening button:hover {
+    cursor: pointer;  
+}
+
+.buttonWrapper:hover {
+    background: #171c20;
+    border-radius: 20px;
+}
