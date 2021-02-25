@@ -7,6 +7,9 @@
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.35rem;
+  position: sticky;
+  bottom: 0;
+  border-top: 0.5px solid var(--darkGrey);
 }
 
 .ri-home-7-fill {
@@ -27,4 +30,10 @@
 
 #mailicon:hover {
   color: var(--blueAccent);
+}
+
+@media (min-width: 500px) {
+  .MobileNavBar {
+    display: none;
+  }
 }
