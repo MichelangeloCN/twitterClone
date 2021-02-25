@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import michelangelo from "./profilepic.png";
+import "./ReplyModal.css";
 
 const ReplyModal = ({ replyFunction }) => {
   const [replyBody, setReplyBody] = useState("");
@@ -18,14 +19,14 @@ const ReplyModal = ({ replyFunction }) => {
       </div>
       <div className="inputText">
         <textarea
-          placeholder="reply"
+          placeholder="Tweet your reply"
           maxLength="280"
           cols="45"
           wrap="hard"
           value={replyBody}
           onChange={handleTextUseChange}
         />
-        <div className="tweetComposeButtons">
+        <div className="replyComposeButtons">
           {/* dont think each button needs a div to be honest  */}
           <div className="media">
             <i className="ri-image-line"> </i>
