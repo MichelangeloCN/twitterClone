@@ -1,5 +1,6 @@
 .interactionIcons {
   width: 100%;
+  max-width: 400px;
   background: var(--mainBckgr);
   display: flex;
   justify-content: space-between;
@@ -18,7 +19,7 @@
   font-size: 1.35rem;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0.15em;
-  padding: 0.35em;
+  padding: 0.25em;
   cursor: pointer;
   margin-left: 0;
   padding-left: 0;
@@ -35,7 +36,7 @@
 
 .interactionIcons i:hover {
   background-color: var(--commentHover);
-  border-radius: 100%;
+  border-radius:100%;
 }
 
 /* both comment and share have the same colours */

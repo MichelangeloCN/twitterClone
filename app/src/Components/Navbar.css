@@ -1,0 +1,67 @@
+.Navbar {
+    width:285px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    background: var(--mainBckgr);
+    border-right: 1px solid var(--darkGrey);
+}
+
+.navWrapper {
+    padding: 0 1rem;
+}
+
+#navElements {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navTwitterLogo {
+    margin-bottom: 1em;
+}
+
+.navTwitterLogo i {
+    color: var(--lightGrey);
+    font-size: 32px;
+}
+.navTwitterLogo i:hover {
+    background: none;
+    cursor: pointer;
+}
+
+#navElements i {
+    font-size: 26px;
+    color: var(--lightGrey);
+}
+
+#navElements:hover, #navElements i:hover {
+    color: var(--blueAccent);
+    background: none; 
+    cursor: pointer;
+}
+
+#navElements:hover {
+   background-color: var(--blueIconHover);
+    border-radius: 20px;
+}
+
+.bottomProfile {
+    margin-top: -1em;
+    padding: 0.45em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomProfileContent {
+    display: flex;
+}
+
+.bottomProfile:hover {
+    background-color: var(--blueIconHover);
+    border-radius: 20px;
+    cursor: pointer;
+}
