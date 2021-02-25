@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Navbar from "./Components/Navbar";
 import MobileNavBar from "./Components/MobileNavBar";
 import RightSidebar from "./Components/RightSidebar";
 import TweetCompose from "./Components/TweetCompose";
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <div className="leftSideBar">
-        <div className="NavBar" />
+        <Navbar />
       </div>
       <div className="centralSection">
         <Header />

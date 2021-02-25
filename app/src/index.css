@@ -9,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  background: var(--mainBckgr);
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: var(--lightGrey);
   -webkit-font-smoothing: antialiased;
