@@ -1,9 +1,12 @@
 import React from "react";
+
+import TweetButton from './TweetButton';
+
 import "./Navbar.css";
+
 import michael from "../img/michaelangelo.jpg";
 
 const Navbar = () => {
-
 
   return (
     <>
@@ -54,8 +57,9 @@ const Navbar = () => {
           </div>
 
           <div className="navTweetButton">
-            {/* here export nav tweet component */}
+            <TweetButton />
           </div>
+          
         </div>
 
         <div className="bottomProfile">

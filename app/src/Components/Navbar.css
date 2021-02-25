@@ -1,119 +1,133 @@
 .Navbar {
-    width:285px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
-    background: var(--mainBckgr);
-    border-right: 1px solid var(--darkGrey);
+  width: 285px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  background: var(--mainBckgr);
+  border-right: 1px solid var(--darkGrey);
 }
 
 .navWrapper {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 #navElements {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .navTwitterLogo {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1em;
 }
 
 .navTwitterLogo i {
-    color: var(--lightGrey);
-    font-size: 32px;
+  color: var(--lightGrey);
+  font-size: 32px;
 }
 .navTwitterLogo i:hover {
-    background: none;
-    cursor: pointer;
+  background: none;
+  cursor: pointer;
 }
 
 #navElements i {
-    font-size: 26px;
-    color: var(--lightGrey);
+  font-size: 26px;
+  color: var(--lightGrey);
 }
 
-#navElements:hover, #navElements i:hover {
-    color: var(--blueAccent);
-    background: none; 
-    cursor: pointer;
+#navElements:hover,
+#navElements i:hover {
+  color: var(--blueAccent);
+  background: none;
+  cursor: pointer;
 }
 
 #navElements:hover {
-   background-color: var(--blueIconHover);
-    border-radius: 20px;
+  background-color: var(--blueIconHover);
+  border-radius: 20px;
 }
 
 .bottomProfile {
-    margin-top: -1em;
-    padding: 0.45em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: -1em;
+  padding: 0.45em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bottomProfileContent {
-    display: flex;
+  display: flex;
 }
 
 .bottomProfile:hover {
-    background-color: var(--blueIconHover);
-    border-radius: 20px;
-    cursor: pointer;
+  background-color: var(--blueIconHover);
+  border-radius: 20px;
+  cursor: pointer;
 }
+
+
 
 @media (max-width: 1275px) {
-    .navTwitterLogo {
-        text-align: right;
-    }
-    #navElements {
-        justify-content: flex-end;
-        margin: 0.5em 0;
-    }
+  .navTwitterLogo {
+    text-align: right;
+  }
+  #navElements {
+    justify-content: flex-end;
+    margin: 0.5em 0;
+  }
+
+  #navElements h2 {
+    display: none;
+  }
+
+  .Navbar {
+    width: 115px;
+  }
+
+  .navTwitterLogo,
+  .bottomProfile {
+    justify-content: flex-end;
+  }
+
+  .bottomProfile .profileHandle,
+  .bottomProfileIcon {
+    display: none;
+  }
+
+  .bottomProfile:hover {
+    background: none;
+  }
+
+  .bottomProfileContent .profileImg:hover {
+    background-color: var(--blueIconHover);
+    border-radius: 100%;
+  }
+
+  .navTweetButton {
+    display: flex;
+    justify-content: flex-end;
     
-    #navElements h2 {
-        display: none;
+  }
+
+  .TweetButton {
+      margin-right: -0.6rem;
     }
 
-    .Navbar {
-        width:115px;
-    }
-    
-    .navTwitterLogo,
-    .bottomProfile {
-        justify-content: flex-end;
-    }
+  }
 
-    .bottomProfile .profileHandle,
-    .bottomProfileIcon {
-        display:none;
-    }
-
-    .bottomProfile:hover {
-        background: none;
-    }
-
-    .bottomProfileContent .profileImg:hover{
-        background-color: var(--blueIconHover);
-        border-radius: 100%;
-    }
-}
 
 @media (max-width: 700px) {
-    .Navbar {
-        width:65px;
-    }
+  .Navbar {
+    width: 65px;
+  }
 
-    .navTwitterLogo,
-    #navElements,
-    .bottomProfile {
-        justify-content: center;
-    }
-
+  .navTwitterLogo,
+  #navElements,
+  .bottomProfile {
+    justify-content: center;
+  }
 }
