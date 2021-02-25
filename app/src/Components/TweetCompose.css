@@ -19,6 +19,7 @@
 }
 
 .tweetCompose {
+  background: var(--mainBckgr) ;
   width: 100%;
   display: none; /* grid */
   grid-template-columns: repeat(7, 7fr);
@@ -26,7 +27,8 @@
 }
 
 .tweetComposeButton {
-  grid-row-start: 1;
+  justify-items: center;
+  grid-row-start: 3;
   grid-column-start: 7;
 }
 
