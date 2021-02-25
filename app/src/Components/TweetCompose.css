@@ -59,3 +59,8 @@ i:hover {
   background-color: var(--blueIconHover);
   border-radius: 50%;
 }
+
+.tweetQuill{
+  display: flex;
+  align-self: flex-end;
+}
