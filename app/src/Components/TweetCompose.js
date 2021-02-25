@@ -8,7 +8,6 @@ const TweetCompose = ({ tweetFunction }) => {
   const handleTextUseChange = (onChangeEvent) =>
     setTweetBody(onChangeEvent.target.value);
 
-
   const handleSubmit = () => {
     tweetFunction("6m", tweetBody);
     setTweetBody("");
@@ -28,31 +27,6 @@ const TweetCompose = ({ tweetFunction }) => {
           value={tweetBody}
           onChange={handleTextUseChange}
         />
-      </div>
-      <div className="tweetComposeButtons">
-        {/* dont think each button needs a div to be honest  */}
-        <div className="media">
-          <i className="ri-image-line"> </i>
-        </div>
-        <div className="GIF">
-          <i className="ri-file-gif-line"> </i>
-        </div>
-        <div className="poll">
-          <i className="ri-bar-chart-2-line" />
-
-        </div>
-
-        <div className="inputText">
-          <textarea
-            placeholder="What's Happening?"
-            maxLength="280"
-            cols="45"
-            wrap="hard"
-            value={tweetBody}
-            onChange={handleTextUseChange}
-          />
-        </div>
-
         <div className="tweetComposeButtons">
           {/* dont think each button needs a div to be honest  */}
           <div className="media">
@@ -83,7 +57,6 @@ const TweetCompose = ({ tweetFunction }) => {
         </button>
       </div>
     </div>
-
   );
 };
 
