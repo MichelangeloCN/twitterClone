@@ -1,0 +1,75 @@
+.whoToFollow {
+    width: 350px;
+    background-color: var(--secondaryBckgr);
+    border-radius: 20px;
+    margin: 0 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.whoToFollow h1 {
+    padding: 0.25em 0.6em;
+    border-bottom: 1px solid var(--darkGrey);
+    margin-bottom: -0.25em;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--darkGrey);
+}
+
+.profileImg img {
+    border-radius: 50%;
+    width: 50px;
+    padding-left: 0.5em;
+}
+
+.profileHandle h3{
+    line-height: 0px;
+}
+
+
+.followsYou {
+    align-self: flex-end;
+    width: 80px;
+}
+
+.followsYou p {
+    background-color: #202327;
+    border-radius: 5px;
+    padding: 0 5px
+}
+
+.profile2 .followsYou p {
+    background: none;
+}
+
+.whoToFollow button {
+    background: none;
+    border: none;
+    padding: 0.8em;
+}
+
+.whoToFollow button:hover {
+    cursor: pointer;  
+}
+
+.buttonWrapper:hover {
+    background: #171c20;
+    border-radius: 20px;
+}
+
+/* needs to stay below whoToFollow button otherwise it will not override some rules */
+.profileButton button {
+    font-weight: 600;
+    border: 1px solid var(--blueAccent);
+    border-radius: 20px;
+    padding: 0.25em 0.85em;
+}
+.profileButton button:hover {
+    background: #1e3644;
+}

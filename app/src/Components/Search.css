@@ -1,0 +1,31 @@
+.search {
+    width: 334px;
+
+    background: var(--secondaryBckgr);
+    margin: 0.25em 1em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.search input {
+    background: none;
+    border:none;
+    color: var(--lightGrey);
+    margin: 0 1em;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.ri-search-line {
+    color: var(--lightGrey);
+    padding: 0.25em 0.5em;
+}
+
+.ri-search-line:hover, .search input:hover {
+    color: var(--blueAccent);
+}

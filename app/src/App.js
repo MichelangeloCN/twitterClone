@@ -1,9 +1,8 @@
 import React from "react";
 import "./App.css";
-import Header from "./Components/Header";
 import InteractionBar from "./Components/InteractionBar";
-// import Messages from "./Components/Messages";
 import MobileNavBar from "./Components/MobileNavBar";
+import RightSidebar from './Components/RightSidebar';
 import TweetCompose from "./Components/TweetCompose"
 import Header from "./Components/Header";
 import Feed from "./Components/Feed";
@@ -13,11 +12,6 @@ import Feed from "./Components/Feed";
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-=======
-
-      <ExampleComponent />
->>>>>>> #16
       <Header />
       <InteractionBar />
       <MobileNavBar />
@@ -27,13 +21,10 @@ function App() {
       <div className="centralSection">
         <Header />
         <TweetCompose />
-        <Feed />
+        <feed />
+        <MobileNavbar />
       </div>
-      <div className="rightSideBar">
-        <div className="searchBar" />
-        <div className="WhatsHappening" />
-        <div className="WhoToFollow" />
-      </div>
+      <RightSidebar />
     </div>
   );
 }

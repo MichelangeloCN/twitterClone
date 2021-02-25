@@ -28,7 +28,7 @@ i {
 
 :root {
   --mainBckgr: #000;
-  --secondaryBckgr: #15181c; /*right sidebar bckgr, search field, dark button bckg */
+  --secondaryBckgr: #191c22; /*right sidebar bckgr, search field, dark button bckg */
   --blueAccent: #1da1f2;
   --inactiveIcon: #0e5179;
   --blueIconHover: #031019;
@@ -63,7 +63,7 @@ h2 {
   line-height: 25px;
 }
 
-/* profile name,  */
+/* profile name, right sidebar title */
 h3 {
   font-size: 15px;
   font-weight: 700;
@@ -80,7 +80,7 @@ h3 {
 /* secondary text (dark grey) */
 .secondaryText {
   color: var(--darkGrey);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 20px;
 }
