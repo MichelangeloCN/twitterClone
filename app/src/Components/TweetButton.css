@@ -1,0 +1,50 @@
+.tweet-button {
+  margin-top: 1.5em;
+}
+
+.tweet-button button {
+  background: none;
+  border: none;
+  border-radius: 46px;
+  font-size: 23.5px;
+}
+
+#tweetbutton {
+  color: white;
+  background-color: var(--blueAccent);
+  border-radius: 50%;
+}
+
+#tweetbutton:hover {
+  background-color: var(--inactiveIcon);
+}
+
+#desktop:focus {
+  display: inline-block;
+}
+
+#desktopTweet {
+  background-color: var(--blueAccent);
+  border-radius: 20px;
+  padding: 0.8em 6.5em;
+  color: #fff;
+}
+#desktopTweet:hover {
+  background-color: var(--inactiveIcon);
+}
+
+@media (min-width: 1275px) {
+  #desktopTweet {
+      display: inline-block;
+  }
+  .TweetButton {
+    display:none;
+  }
+
+}
+
+@media (max-width: 1275px) {
+  #desktopTweet {
+      display: none;
+  }
+}
