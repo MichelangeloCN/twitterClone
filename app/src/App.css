@@ -1,0 +1,11 @@
+.App {
+  background: var(--mainBckgr);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.centralSection {
+  display: flex;
+  flex-direction: column;
+}

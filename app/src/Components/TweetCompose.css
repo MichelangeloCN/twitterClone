@@ -1,0 +1,61 @@
+.tweetButton {
+  background: var(--inactiveIcon);
+  color: var(--darkGrey);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+
+.tweetCompose {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 7fr);
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.tweetComposeButton {
+  grid-row-start: 1;
+  grid-column-start: 7;
+}
+
+.profilePic {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+img {
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  padding: 0px 11px 11px 11px;
+}
+
+.inputText {
+  grid-area: 2 / 2 / 2 / 6;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  background: var(--mainBckgr);
+  color: var(--lightGrey);
+  resize: none;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+}
+
+.tweetComposeButtons {
+  grid-area: 3/ 2/ 3/ 6;
+  display: flex;
+}
+
+i {
+  padding: 0.33em;
+  color: var(--blueAccent);
+}
+
+i:hover {
+  background-color: var(--blueIconHover);
+  border-radius: 50%;
+}
