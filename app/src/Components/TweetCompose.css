@@ -1,10 +1,21 @@
 .tweetButton {
+  background: var(--blueAccent);
+  color: var(--lightGrey);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  outline: none
+}
+
+.tweetButton:disabled{
   background: var(--inactiveIcon);
   color: var(--darkGrey);
   padding: 6px 12px;
   border-radius: 20px;
   border: none;
   font-weight: bold;
+  outline: none
 }
 
 .tweetCompose {
@@ -60,7 +71,3 @@ i:hover {
   border-radius: 50%;
 }
 
-.tweetQuill{
-  display: flex;
-  align-self: flex-end;
-}

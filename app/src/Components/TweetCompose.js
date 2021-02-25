@@ -1,18 +1,23 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import michelangelo from "./profilepic.png";
 import "./TweetCompose.css";
+// import Feed from "./Feed";
 
-const TweetCompose = () => {
+const TweetCompose = ({ tweetFunction }) => {
   const [tweetBody, setTweetBody] = useState("");
-  const handleTextUseChange = (onChangeEvent) => setTweetBody(onChangeEvent.target.value);
+  const handleTextUseChange = (onChangeEvent) =>
+    setTweetBody(onChangeEvent.target.value);
+
+  const handleSubmit = () => {
+    tweetFunction("6m", tweetBody);
+    setTweetBody("");
+  };
 
   return (
-    <>
     <div className="tweetCompose">
       <div className="profilePic">
         <img src={michelangelo} alt="profilepic" />
       </div>
-
       <div className="inputText">
         <textarea
           placeholder="What's Happening?"
@@ -23,7 +28,6 @@ const TweetCompose = () => {
           onChange={handleTextUseChange}
         />
       </div>
-
       <div className="tweetComposeButtons">
         {/* dont think each button needs a div to be honest  */}
         <div className="media">
@@ -43,16 +47,16 @@ const TweetCompose = () => {
         </div>
       </div>
       <div className="tweetComposeButton">
-        {/* <button className="tweetButton" type="submit" {tweetBody ? (button=!disable) : (button=disable)}
+        <button
+          className="tweetButton"
+          type="submit"
+          disabled={!tweetBody}
+          onClick={handleSubmit}
         >
           Tweet
-        </button> */}
+        </button>
       </div>
-            </div>
-    <div className="tweetQuill">
-        <i className="ri-quill-pen-fill"> </i>
-        </div>
-    </>
+    </div>
   );
 };
 

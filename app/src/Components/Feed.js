@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Feed.css";
 
-import tweets from "../tweets";
-
 import Tweet from "./Tweet";
 
-const Feed = () => {
-  const [feedTweets] = useState(tweets);
+const Feed = ({ tweetList }) => {
   const [isLoading, setIsLoading] = useState(null);
 
-  const createTweetComponents = (tweetList) => {
-    if (tweetList.length === 0) return <p>There are not tweets available</p>;
-    return tweetList.map((tweet) => <Tweet key={tweet.id} tweet={tweet} />);
+  const createTweetComponents = (tweets) => {
+    if (tweets.length === 0) return <p>There are not tweets available</p>;
+    return tweets.map((tweet) => <Tweet key={tweet.id} tweet={tweet} />);
   };
 
   useEffect(() => {
@@ -23,7 +20,7 @@ const Feed = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const tweetComponents = createTweetComponents(feedTweets);
+  const tweetComponents = createTweetComponents(tweetList);
 
   return (
     <div className="feedContainer">
