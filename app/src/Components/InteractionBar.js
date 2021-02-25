@@ -1,19 +1,32 @@
 import React, { useState } from "react";
+import Modal from "react-modal";
 import "./InteractionBar.css";
+import ReplyModal from "./ReplyModal";
 
 const InteractionBar = () => {
-  const [commentCount, setCommentCount] = useState(1);
   const [retweetCount, setRetweetCount] = useState(5);
   const [likeCount, setLikeCount] = useState(100);
   const [shareCount, setShareCount] = useState(10);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const setModalIsOpenToTrue = () => {
+    setModalIsOpen(true);
+  };
+  const setModalIsOpenToFalse = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <div className="interactionIcons">
       <div className="comment">
-        <button type="button" onClick={() => setCommentCount(commentCount + 1)}>
+        <button type="button" onClick={setModalIsOpenToTrue}>
           <i className="ri-chat-3-line"> </i>
         </button>
-        <p> {commentCount} </p>
+        <Modal isOpen={modalIsOpen}>
+          <button type="button" onClick={setModalIsOpenToFalse}>
+            x
+          </button>
+          <ReplyModal />
+        </Modal>
       </div>
 
       <div className="retweet">
