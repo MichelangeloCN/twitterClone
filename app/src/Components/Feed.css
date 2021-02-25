@@ -3,12 +3,17 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  width: 100vw;
 }
-#loadingSpinner {
+.spinnerContainer {
+  text-align: center;
+}
+#loadingSpinner::before {
   color: var(--blueAccent);
   font-size: 3rem;
   animation: flash 1s infinite ease-in-out alternate;
+  margin: 1em auto;
 }
 
 @keyframes flash {

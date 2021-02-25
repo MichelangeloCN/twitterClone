@@ -1,5 +1,5 @@
 .App {
-  background: var(--mainBckgr);
+  background: var(--secondaryBckgr);
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -8,4 +8,7 @@
 .centralSection {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  max-width: 100vw;
+  padding-top: 50px; /* creates room covered by fixed header */
 }

@@ -4,7 +4,10 @@
   width: 100%;
   margin: 0%;
   display: flex;
-  justify-self: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  border-bottom: 0.5px solid var(--darkGrey);
 }
 
 h1 {
@@ -17,8 +20,6 @@ h1 {
 
 #profilePic {
   border-radius: 50%;
-  width: 10%;
-  height: auto;
   padding: 11px;
   align-items: left;
 }
