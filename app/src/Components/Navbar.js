@@ -1,13 +1,13 @@
 import React from "react";
 
-import TweetButton from './TweetButton';
+import TweetButton from "./TweetButton";
 
 import "./Navbar.css";
 
 import michael from "../img/michaelangelo.jpg";
+import ProfilePicture from "./ProfilePicture";
 
 const Navbar = () => {
-
   return (
     <>
       <div className="Navbar">
@@ -59,15 +59,11 @@ const Navbar = () => {
           <div className="navTweetButton">
             <TweetButton />
           </div>
-          
         </div>
 
         <div className="bottomProfile">
           <div className="bottomProfileContent">
-            <div className="profileImg">
-              <img src={michael} alt="michael" />
-            </div>
-
+            <ProfilePicture src={michael} size="small" />
             <div className="profileHandle">
               <h3> Michaelangelo </h3>
               <p className="secondaryText">@Michaelangelo</p>

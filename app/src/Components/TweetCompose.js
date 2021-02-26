@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import michelangelo from "./profilepic.png";
+import ProfilePicture from "./ProfilePicture";
 import "./TweetCompose.css";
 // import Feed from "./Feed";
 
@@ -15,9 +16,7 @@ const TweetCompose = ({ tweetFunction }) => {
 
   return (
     <div className="tweetCompose">
-      <div className="profilePic">
-        <img src={michelangelo} alt="profilepic" />
-      </div>
+      <ProfilePicture src={michelangelo} size="medium" />
       <div className="inputText">
         <textarea
           placeholder="What's Happening?"
