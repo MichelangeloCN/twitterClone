@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Modal from "react-modal";
 import "./InteractionBar.css";
 import ReplyModal from "./ReplyModal";
 
@@ -27,6 +26,9 @@ const InteractionBar = () => {
       backgroundColor: "rgba(0, 0, 0, 0.4)",
     },
   };
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
   return (
@@ -36,13 +38,19 @@ const InteractionBar = () => {
           <i className="ri-chat-3-line"> </i>
         </button>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <p> {commentCount} </p>
 =======
+=======
+>>>>>>> Stashed changes
         <ReplyModal
           modalIsOpen={modalIsOpen}
           setModalIsOpenToFalse={setModalIsOpenToFalse}
           modalStyles={modalStyles}
         />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </div>
 
