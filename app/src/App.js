@@ -11,12 +11,17 @@ import tweets from "./tweets";
 // As you make components you can replace the div's with the correct className
 
 function App() {
+  const [buttonState, setButtonState] = useState(true);
   const [tweetList, setTweetList] = useState(tweets);
   const [userProfile] = useState({
     profile: "",
     userName: "Michealangelo",
     handle: "@Michealangelo",
   });
+
+  const toggle  = () => {
+    setButtonState(!buttonState);
+  }
 
   const addTweet = (timeStamp, body) => {
     const liveTweet = {
@@ -42,7 +47,7 @@ function App() {
         <Navbar />
       </div>
       <div className="centralSection">
-        <Header />
+        <Header onClickHandler={toggle} BtnState = {buttonState}/>
         <TweetCompose tweetFunction={addTweet} />
         <Feed tweetList={tweetList} />
         <MobileNavBar />

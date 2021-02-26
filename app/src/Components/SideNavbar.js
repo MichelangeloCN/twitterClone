@@ -5,13 +5,28 @@ import "./SideNavbar.css";
 import michael from "../img/michaelangelo.jpg";
 import ProfilePicture from "./ProfilePicture";
 
-const SideNavbar = () => {
+const SideNavbar = ({onClickHandler, BtnState}) => {
+
+
   return (
     <>
       <div className="SideNavbar">
         <div className="navWrapper">
           <div className="navTwitterLogo">
-            <i className="ri-twitter-fill"> </i>
+
+          {!BtnState ? (
+              <button
+               className="NavButton"
+               type="button"
+               onClick={ onClickHandler }
+               >
+            <i className="ri-twitter-fill" id="logoToggle"> </i>
+
+            </button>
+      ) : (
+        <i className="ri-twitter-fill" id="logoToggle"> </i>
+      )}
+
           </div>
 
           <div id="navElements" className="navHome">

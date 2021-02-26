@@ -1,30 +1,24 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Header.css";
 import profPic from "./profilepic.png";
 
 import SideNavbar from './SideNavbar'
 import ProfilePicture from "./ProfilePicture";
 
-const Header = () => {
+const Header = ({onClickHandler, BtnState}) => {
   
-  const [buttonState, setButtonState] = useState(true);
-  const [navState, setNavState] = useState(true);
-
   return (
     <div className="Header">
-      {buttonState ? (
+      {BtnState? (
       <button
       className="NavButton"
       type="button"
-      onClick={() => {
-      setButtonState(!buttonState);
-      setNavState(!navState);
-      }}
+      onClick={ onClickHandler }
       >
       <ProfilePicture src={profPic} size="small" id="headerProfilePic"  />
       </button>
       ) : (
-        <SideNavbar />
+        <SideNavbar onClickHandler={onClickHandler} BtnState={BtnState} />
       )}
 
       <h1>Home</h1>
