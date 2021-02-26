@@ -19,7 +19,7 @@ const ReplyModal = ({ replyFunction }) => {
       </div>
       <div className="inputText">
         <textarea
-          placeholder="Tweet your reply"
+          {placeholder}="Tweet your reply"
           maxLength="280"
           cols="45"
           wrap="hard"
