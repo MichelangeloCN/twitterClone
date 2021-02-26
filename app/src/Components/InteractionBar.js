@@ -7,13 +7,6 @@ const InteractionBar = () => {
   const [retweetCount, setRetweetCount] = useState(5);
   const [likeCount, setLikeCount] = useState(100);
   const [shareCount, setShareCount] = useState(10);
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const setModalIsOpenToTrue = () => {
-    setModalIsOpen(true);
-  };
-  const setModalIsOpenToFalse = () => {
-    setModalIsOpen(false);
-  };
 <<<<<<< Updated upstream
 =======
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -42,12 +35,6 @@ const InteractionBar = () => {
         <button type="button" onClick={setModalIsOpenToTrue}>
           <i className="ri-chat-3-line"> </i>
         </button>
-        <Modal isOpen={modalIsOpen}>
-          <button type="button" onClick={setModalIsOpenToFalse}>
-            x
-          </button>
-          <ReplyModal />
-        </Modal>
 <<<<<<< Updated upstream
         <p> {commentCount} </p>
 =======
