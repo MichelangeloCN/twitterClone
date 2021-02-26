@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./InteractionBar.css";
 import ReplyModal from "./ReplyModal";
+import "./ReplyModal.css";
 
 const InteractionBar = () => {
   const [retweetCount, setRetweetCount] = useState(5);
   const [likeCount, setLikeCount] = useState(100);
   const [shareCount, setShareCount] = useState(10);
-<<<<<<< Updated upstream
-=======
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const setModalIsOpenToTrue = () => {
     setModalIsOpen(true);
@@ -26,13 +25,6 @@ const InteractionBar = () => {
       backgroundColor: "rgba(0, 0, 0, 0.4)",
     },
   };
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
   return (
     <div className="interactionIcons">
@@ -40,27 +32,12 @@ const InteractionBar = () => {
         <button type="button" onClick={setModalIsOpenToTrue}>
           <i className="ri-chat-3-line"> </i>
         </button>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        <p> {commentCount} </p>
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
         <ReplyModal
           modalIsOpen={modalIsOpen}
           setModalIsOpenToFalse={setModalIsOpenToFalse}
           modalStyles={modalStyles}
         />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       </div>
 
       <div className="retweet">
