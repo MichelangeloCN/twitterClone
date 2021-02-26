@@ -14,7 +14,7 @@ const ReplyModal = ({ modalIsOpen, modalStyles, setModalIsOpenToFalse }) => {
       </div>
       <TweetCompose
         tweetFunction={replyFunction}
-        placeHolderText="Tweet Your Reply"
+        placeHolder="Tweet your reply"
         submit="Reply"
       />
     </Modal>
