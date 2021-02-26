@@ -3,6 +3,7 @@ import "./Tweet.css";
 import profilePicture from "./profilepic.png";
 import InteractionBar from "./InteractionBar";
 import ProfilePicture from "./ProfilePicture";
+import ImageAttachment from "./ImageAttachment";
 
 const Tweet = ({ tweet }) => {
   return (
@@ -24,6 +25,11 @@ const Tweet = ({ tweet }) => {
           </button>
         </div>
         <div className="tweetBody mainText">{tweet.body}</div>
+        {tweet.attachment ? (
+          <ImageAttachment attachment={tweet.attachment} />
+        ) : (
+          ""
+        )}
         <InteractionBar />
       </div>
     </div>

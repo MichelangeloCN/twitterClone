@@ -2,21 +2,23 @@
   background: black;
   height: 50px;
   width: 100%;
-  margin: 0%;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   border-bottom: 0.5px solid var(--darkGrey);
 }
 
-h1 {
-  font-size: 19px;
-  font-weight: 800;
-  line-height: 25px;
-  font-size: 1.3rem;
-  padding-left: 8%;
-  flex-grow: 2;
+
+#headerProfilePic {
+  margin-right: 0.5em;
+}
+
+
+.Header h1 {
+  justify-self: flex-start;
+  padding: 0 1em;
 }
 
 .ri-star-s-line {
@@ -25,8 +27,12 @@ h1 {
   font-size: 16pt;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   #headerProfilePic {
     display: none;
+  }
+
+  .Header {
+    display: flex;
   }
 }

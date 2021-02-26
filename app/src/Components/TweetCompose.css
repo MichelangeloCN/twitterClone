@@ -5,21 +5,21 @@
   border-radius: 20px;
   border: none;
   font-weight: bold;
-  outline: none
+  outline: none;
 }
 
-.tweetButton:disabled{
+.tweetButton:disabled {
   background: var(--inactiveIcon);
   color: var(--darkGrey);
   padding: 6px 12px;
   border-radius: 20px;
   border: none;
   font-weight: bold;
-  outline: none
+  outline: none;
 }
 
 .tweetCompose {
-  background: var(--mainBckgr) ;
+  background: var(--mainBckgr);
   width: 100%;
   display: none; /* grid */
   grid-template-columns: repeat(7, 7fr);
@@ -36,6 +36,7 @@
   grid-row-start: 1;
   grid-column-start: 1;
 }
+
 .profileContainer {
   height: 49px;
   width: 49px;
@@ -80,11 +81,8 @@
   border-radius: 50%;
 }
 
-
-
 @media (min-width: 600px) {
   .tweetCompose {
     display: grid;
   }
 }
-

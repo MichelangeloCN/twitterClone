@@ -20,7 +20,11 @@
   color: var(--blueAccent);
 }
 
-.ri-notification-3-line:hover {
+#notificationicon {
+  color: var(--lightgrey);
+}
+
+#notificationicon:hover {
   color: var(--blueAccent);
 }
 

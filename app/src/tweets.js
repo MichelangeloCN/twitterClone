@@ -69,7 +69,10 @@ const tweets = [
       retweets: 6,
       likes: 34,
     },
-    attachment: null,
+    attachment: {
+      src: "http://picsum.photos/600/200",
+      caption: "",
+    },
   },
   {
     id: 2,
