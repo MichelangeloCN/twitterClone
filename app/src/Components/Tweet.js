@@ -2,14 +2,13 @@ import React from "react";
 import "./Tweet.css";
 import profilePicture from "./profilepic.png";
 import InteractionBar from "./InteractionBar";
+import ProfilePicture from "./ProfilePicture";
 
 const Tweet = ({ tweet }) => {
   return (
     <div className="tweetContainer">
       <div className="leftSide">
-        <div className="profileImg">
-          <img src={profilePicture} alt="profile" />
-        </div>
+        <ProfilePicture src={profilePicture} size="medium" />
       </div>
       <div className="tweetMain">
         <div className="tweetHeader" />
