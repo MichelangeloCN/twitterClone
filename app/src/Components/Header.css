@@ -12,9 +12,13 @@
 
 
 #headerProfilePic {
-  margin-right: 0.5em;
+  margin-left: -1.5em;
 }
 
+.NavButton {
+  background: none;
+  border:none;
+}
 
 .Header h1 {
   justify-self: flex-start;
