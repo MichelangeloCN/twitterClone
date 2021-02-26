@@ -17,13 +17,9 @@ const TweetCompose = ({ tweetFunction, placeHolder="What's Happening?", submit="
 
   return (
     <div className="tweetCompose">
-<<<<<<< refs/remotes/origin/main
+      <div className="profileContainer">
       <ProfilePicture src={michelangelo} size="medium" />
-=======
-      <div>
-        <img className="profilePic" src={michelangelo} alt="profilepic" />
       </div>
->>>>>>> Gap Added and Compose work
       <div className="inputText">
         <TextareaAutosize
         className="inputTextArea"

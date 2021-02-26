@@ -32,11 +32,11 @@
   grid-column-start: 7;
 }
 
-.profilePic {
-  grid-row-start: 2;
+.profileContainer {
+  grid-row-start: 1;
   grid-column-start: 1;
 }
-.profilePic {
+.profileContainer {
   height: 49px;
   width: 49px;
   border-radius: 50%;
@@ -47,6 +47,7 @@
   grid-area: 1 / 2 / 2 / 6;
   width: 100%;
   height: 50px;
+  padding-top: 12px;
 }
 
 .inputTextArea {
@@ -59,12 +60,13 @@
   border: none;
   outline: none;
   font-size: 15px;
-  border-bottom: 0.5px solid var(--darkGrey);
 }
 
 .tweetComposeButtons {
   grid-area: 3/ 2/ 3/ 6;
   display: flex;
+  border-top: 0.5px solid var(--darkGrey);
+  align-items: center;
 }
 
 .ri-image-line, .ri-file-gif-line, .ri-bar-chart-2-line, .ri-emotion-happy-line, .ri-calendar-todo-line{
