@@ -10,4 +10,6 @@
   flex-direction: column;
   align-items: stretch;
   max-width: 100vw;
+  border-right: 0.5px solid var(--darkGrey);
+  border-left: 0.5px solid var(--darkGrey);
 }

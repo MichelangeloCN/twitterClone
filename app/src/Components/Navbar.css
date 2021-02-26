@@ -6,7 +6,6 @@
   justify-content: space-between;
   align-items: space-between;
   background: var(--mainBckgr);
-  border-right: 1px solid var(--darkGrey);
 }
 
 .navWrapper {
@@ -69,8 +68,6 @@
   cursor: pointer;
 }
 
-
-
 @media (max-width: 1275px) {
   .navTwitterLogo {
     text-align: right;
@@ -110,15 +107,12 @@
   .navTweetButton {
     display: flex;
     justify-content: flex-end;
-    
   }
 
   .TweetButton {
-      margin-right: -0.6rem;
-    }
-
+    margin-right: -0.6rem;
   }
-
+}
 
 @media (max-width: 700px) {
   .Navbar {
