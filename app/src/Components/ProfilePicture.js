@@ -2,10 +2,13 @@ import React from "react";
 
 import "./ProfilePicture.css";
 
-const ProfilePicture = ({ src }) => {
+const ProfilePicture = ({ src, size }) => {
   return (
-    <div className="profilePicContainer">
-      <img src={src} alt="profile pic" />
+    <div className={`profilePicContainer ${size}`}>
+      <div
+        className={`profilePicture ${size}`}
+        style={{ backgroundImage: `url(${src})` }}
+      />
     </div>
   );
 };

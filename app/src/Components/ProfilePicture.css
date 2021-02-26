@@ -1,9 +1,30 @@
 .profilePicContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
 }
-.profilePicContainer img {
-  height: 70%;
-  width: auto;
+.profilePicture {
+  background-color: aqua;
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.profilePicContainer.small {
+  padding: 0.3em;
+}
+.profilePicContainer.medium {
+  padding: 0.3em;
+}
+
+.profilePicture.small {
+  height: 40px;
+  width: 40px;
+}
+.profilePicture.medium {
+  height: 50px;
+  width: 50px;
 }
