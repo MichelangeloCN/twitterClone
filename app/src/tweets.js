@@ -70,7 +70,7 @@ const tweets = [
       likes: 34,
     },
     attachment: {
-      src: "http://picsum.photos/600/200",
+      src: "http://picsum.photos/500/200",
       caption: "",
     },
   },
