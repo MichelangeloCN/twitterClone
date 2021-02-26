@@ -1,8 +1,14 @@
 .modal-header {
-  color: red;
-  background-color: red;
+  background-color: var(--mainBckgr);
+  border-bottom: solid var(--darkGrey) 2px;
+  height: 40px;
 }
 
 #replybutton {
   background: transparent;
+  color: white;
+  border: none;
+  padding-top: 1em;
+  font-size: medium;
+  color: var(--blueAccent);
 }
