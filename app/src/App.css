@@ -1,6 +1,5 @@
 .App {
-  background: var(--secondaryBckgr);
-  min-height: 100vh;
+  background: var(--mainBckgr);
   display: flex;
   flex-direction: row;
   justify-content: center;
