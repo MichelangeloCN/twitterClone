@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./Header.css";
 import profPic from "./profilepic.png";
+
 import SideNavbar from './SideNavbar'
 import ProfilePicture from "./ProfilePicture";
 
