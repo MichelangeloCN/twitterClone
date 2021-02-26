@@ -6,7 +6,7 @@ import ProfilePicture from "./ProfilePicture";
 const Header = () => {
   return (
     <div className="Header">
-      <ProfilePicture src={profPic} size="small" />
+      <ProfilePicture src={profPic} size="small" id="headerProfilePic"  />
       <h1>Home</h1>
       <i className="ri-star-s-line" />
     </div>

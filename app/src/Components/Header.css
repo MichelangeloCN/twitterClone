@@ -19,17 +19,14 @@ h1 {
   flex-grow: 2;
 }
 
-.profileContainer {
-  width: 70px;
-  height: 100%;
-}
-#profilePic {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
 .ri-star-s-line {
   padding-top: 15px;
   color: var(--comment);
   font-size: 16pt;
+}
+
+@media (min-width: 500px) {
+  #headerProfilePic {
+    display: none;
+  }
 }
