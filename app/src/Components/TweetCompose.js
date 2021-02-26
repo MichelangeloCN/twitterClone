@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import TextareaAutosize from "react-textarea-autosize";
 import michelangelo from "./profilepic.png";
 import ProfilePicture from "./ProfilePicture";
 import "./TweetCompose.css";
 // import Feed from "./Feed";
 
-const TweetCompose = ({ tweetFunction }) => {
+const TweetCompose = ({ tweetFunction, placeHolder="What's Happening?", submit="Tweet"}) => {
   const [tweetBody, setTweetBody] = useState("");
   const handleTextUseChange = (onChangeEvent) =>
     setTweetBody(onChangeEvent.target.value);
@@ -16,18 +17,22 @@ const TweetCompose = ({ tweetFunction }) => {
 
   return (
     <div className="tweetCompose">
+      <div className="profileContainer">
       <ProfilePicture src={michelangelo} size="medium" />
+      </div>
       <div className="inputText">
-        <textarea
-          placeholder="What's Happening?"
+        <TextareaAutosize
+        className="inputTextArea"
+          placeholder={placeHolder}
           maxLength="280"
           cols="45"
           wrap="hard"
           value={tweetBody}
           onChange={handleTextUseChange}
         />
+        </div>
         <div className="tweetComposeButtons">
-          {/* dont think each button needs a div to be honest  */}
+          {/* dont think each button needs a div to be honest, but once I remove them things don't align well  */}
           <div className="media">
             <i className="ri-image-line"> </i>
           </div>
@@ -44,7 +49,6 @@ const TweetCompose = ({ tweetFunction }) => {
             <i className="ri-calendar-todo-line"> </i>
           </div>
         </div>
-      </div>
       <div className="tweetComposeButton">
         <button
           className="tweetButton"
@@ -52,7 +56,7 @@ const TweetCompose = ({ tweetFunction }) => {
           disabled={!tweetBody}
           onClick={handleSubmit}
         >
-          Tweet
+          {submit}
         </button>
       </div>
     </div>
