@@ -14,6 +14,27 @@ const InteractionBar = () => {
   const setModalIsOpenToFalse = () => {
     setModalIsOpen(false);
   };
+<<<<<<< Updated upstream
+=======
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const setModalIsOpenToTrue = () => {
+    setModalIsOpen(true);
+  };
+  const setModalIsOpenToFalse = () => {
+    setModalIsOpen(false);
+  };
+  const modalStyles = {
+    content: {
+      backgroundColor: "transparent",
+      border: "lightGrey",
+      borderRadius: "3em",
+    },
+
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+    },
+  };
+>>>>>>> Stashed changes
 
   return (
     <div className="interactionIcons">
@@ -27,6 +48,15 @@ const InteractionBar = () => {
           </button>
           <ReplyModal />
         </Modal>
+<<<<<<< Updated upstream
+        <p> {commentCount} </p>
+=======
+        <ReplyModal
+          modalIsOpen={modalIsOpen}
+          setModalIsOpenToFalse={setModalIsOpenToFalse}
+          modalStyles={modalStyles}
+        />
+>>>>>>> Stashed changes
       </div>
 
       <div className="retweet">

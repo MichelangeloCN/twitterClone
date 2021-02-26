@@ -1,29 +1,8 @@
-.replyButton {
-  background: var(--blueAccent);
-  color: var(--lightGrey);
-  padding: 6px 12px;
-  border-radius: 20px;
-  border: none;
-  font-weight: bold;
-  outline: none;
-}
-.replyCompose {
-  background: var(--mainBckgr);
+.modal-header {
+  color: red;
+  background-color: red;
 }
 
-.replyComposeButton {
-  justify-items: center;
-  grid-row-start: 3;
-  grid-column-start: 7;
-}
-
-.profilePic {
-  grid-row-start: 2;
-  grid-column-start: 1;
-}
-img {
-  height: 49px;
-  width: 49px;
-  border-radius: 50%;
-  padding: 0px 11px 11px 11px;
+#replybutton {
+  background: transparent;
 }

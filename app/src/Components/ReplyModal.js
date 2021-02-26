@@ -1,61 +1,23 @@
-import React, { useState } from "react";
-import michelangelo from "./profilepic.png";
-import "./ReplyModal.css";
+import React from "react";
+import Modal from "react-modal";
+import TweetCompose from "./TweetCompose";
 
-const ReplyModal = ({ replyFunction }) => {
-  const [replyBody, setReplyBody] = useState("");
-  const handleTextUseChange = (onChangeEvent) =>
-    setReplyBody(onChangeEvent.target.value);
-
-  const handleSubmit = () => {
-    replyFunction("6m", replyBody);
-    setReplyBody("");
-  };
+const ReplyModal = ({ modalIsOpen, modalStyles, setModalIsOpenToFalse }) => {
+  const replyFunction = () => {};
 
   return (
-    <div className="replyCompose">
-      <div className="profilePic">
-        <img src={michelangelo} alt="profilepic" />
-      </div>
-      <div className="inputText">
-        <textarea
-          placeholder="Tweet your reply"
-          maxLength="280"
-          cols="45"
-          wrap="hard"
-          value={replyBody}
-          onChange={handleTextUseChange}
-        />
-        <div className="replyComposeButtons">
-          {/* dont think each button needs a div to be honest  */}
-          <div className="media">
-            <i className="ri-image-line"> </i>
-          </div>
-          <div className="GIF">
-            <i className="ri-file-gif-line"> </i>
-          </div>
-          <div className="poll">
-            <i className="ri-bar-chart-2-line" />
-          </div>
-          <div className="emoji">
-            <i className="ri-emotion-happy-line"> </i>
-          </div>
-          <div className="schedule">
-            <i className="ri-calendar-todo-line"> </i>
-          </div>
-        </div>
-      </div>
-      <div className="replyComposeButton">
-        <button
-          className="replyButton"
-          type="button"
-          disabled={!replyBody}
-          onClick={handleSubmit}
-        >
-          Reply
+    <Modal isOpen={modalIsOpen} style={modalStyles}>
+      <div className="modal-header">
+        <button type="button" id="replybutton" onClick={setModalIsOpenToFalse}>
+          x
         </button>
       </div>
-    </div>
+      <TweetCompose
+        tweetFunction={replyFunction}
+        placeHolderText="Tweet Your Reply"
+        submit="Reply"
+      />
+    </Modal>
   );
 };
 export default ReplyModal;
