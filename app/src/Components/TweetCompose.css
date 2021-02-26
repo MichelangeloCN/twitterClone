@@ -23,7 +23,7 @@
   width: 100%;
   display: none; /* grid */
   grid-template-columns: repeat(7, 7fr);
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .tweetComposeButton {
@@ -36,18 +36,20 @@
   grid-row-start: 2;
   grid-column-start: 1;
 }
-img {
+.profilePic {
   height: 49px;
   width: 49px;
   border-radius: 50%;
   padding: 0px 11px 11px 11px;
 }
 
-.inputText {
-  grid-area: 2 / 2 / 2 / 6;
+.inputText{
+  grid-area: 1 / 2 / 2 / 6;
+  width: 100%;
+  height: 50px;
 }
 
-textarea {
+.inputTextArea {
   width: 100%;
   height: 100%;
   background: var(--mainBckgr);
@@ -56,6 +58,8 @@ textarea {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   border: none;
   outline: none;
+  font-size: 15px;
+  border-bottom: 0.5px solid var(--darkGrey);
 }
 
 .tweetComposeButtons {
@@ -63,12 +67,13 @@ textarea {
   display: flex;
 }
 
-i {
+.ri-image-line, .ri-file-gif-line, .ri-bar-chart-2-line, .ri-emotion-happy-line, .ri-calendar-todo-line{
+  font-size: 22.5px;
   padding: 0.33em;
   color: var(--blueAccent);
 }
 
-i:hover {
+.ri-image-line:hover, .ri-file-gif-line:hover, .ri-bar-chart-2-line:hover, .ri-emotion-happy-line:hover, .ri-calendar-todo-line:hover {
   background-color: var(--blueIconHover);
   border-radius: 50%;
 }

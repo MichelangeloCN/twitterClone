@@ -7,6 +7,7 @@ import TweetCompose from "./Components/TweetCompose";
 import Header from "./Components/Header";
 import Feed from "./Components/Feed";
 import tweets from "./tweets";
+import PageGap from "./Components/PageGap";
 
 // As you make components you can replace the div's with the correct className
 
@@ -44,6 +45,7 @@ function App() {
       <div className="centralSection">
         <Header />
         <TweetCompose tweetFunction={addTweet} />
+        <PageGap />
         <Feed tweetList={tweetList} />
         <MobileNavBar />
       </div>
