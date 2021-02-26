@@ -2,10 +2,9 @@
   border: 0.5px solid var(--darkGrey);
   border-radius: 1em;
   height: 200px;
-  width: 100%;
+  max-width: 100%;
   margin-top: 1em;
   overflow: hidden;
 }
 .imageAttachment img {
-  border-radius: none;
 }
