@@ -14,10 +14,29 @@
     margin-bottom: -0.25em;
 }
 
-.profile {
-    display: flex;
-    justify-content: space-around;
+
+#profileFlex,
+#profileFlex2,
+#profileFlex3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
     align-items: center;
+}
+
+#profileFlexImg {
+    display: flexbox;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1.5em;
+}
+
+.profileHandle {
+    justify-self: start;
+    margin-left: -1.3em;
+}
+
+.profile {
     padding: 7px 0;
     border-bottom: 1px solid var(--darkGrey);
 }
@@ -25,13 +44,12 @@
 .profileImg img {
     border-radius: 50%;
     width: 50px;
-    padding-left: 0.5em;
 }
+
 
 .profileHandle h3{
     line-height: 0px;
 }
-
 
 .followsYou {
     align-self: flex-end;
